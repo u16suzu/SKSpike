@@ -35,11 +35,41 @@
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-
+    for(UITouch *touch in touches){
+        CGPoint location = [touch locationInNode:self];
+        
+        CGFloat distance = [self distanceBetweenTwoPoints:location :self.ship.position];
+        CGFloat speed = 60;
+        NSTimeInterval duration = distance/speed;
+        
+        SKAction*a = [SKAction moveTo:location duration:duration];
+        [self.ship runAction:a];
+    }
 }
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
 }
 
+#pragma mark - Private
+
+- (CGFloat)distanceBetweenTwoPoints:(CGPoint)point2 :(CGPoint)point1{
+    CGFloat dx = point2.x - point1.x;
+    CGFloat dy = point2.y - point1.y;
+    return sqrt(dx*dx + dy*dy );
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
