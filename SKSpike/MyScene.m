@@ -11,6 +11,7 @@
 
 @interface MyScene()
 @property (nonatomic) SKSpriteNode*ship;
+@property (nonatomic) SKSpriteNode*enemy;
 @end
 
 @implementation MyScene
@@ -21,6 +22,7 @@
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         
         [self addChild:self.ship];
+        [self addChild:self.enemy];
     }
     return self;
 }
@@ -34,15 +36,25 @@
     return _ship;
 }
 
+- (SKSpriteNode*)enemy{
+    if(!_enemy){
+        _enemy = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+        _enemy.size = CGSizeMake(30, 30);
+        _enemy.position = CGPointMake(50, 350);
+        // FIXME: hack. it should be done by image itself.
+        SKAction *rotation = [SKAction rotateByAngle: M_PI duration:0];
+        [_enemy runAction: rotation];
+    }
+    return _enemy;
+}
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     for(UITouch *touch in touches){
         CGPoint location = [touch locationInNode:self];
-        
         CGFloat distance = [self distanceBetweenTwoPoints:location :self.ship.position];
-        CGFloat speed = 60;
+        CGFloat speed = 200; // FIXME: move to ship's property
         NSTimeInterval duration = distance/speed;
-        
-        SKAction*a = [SKAction moveTo:location duration:duration];
+        SKAction *a = [SKAction moveTo:location duration:duration];
         [self.ship runAction:a];
     }
 }
