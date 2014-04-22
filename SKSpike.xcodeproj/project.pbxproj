@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		647951EA1906CE1A0034007C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647951E91906CE1A0034007C /* Foundation.framework */; };
+		647951EC1906CE1A0034007C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647951EB1906CE1A0034007C /* CoreGraphics.framework */; };
+		647951EE1906CE1A0034007C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647951ED1906CE1A0034007C /* UIKit.framework */; };
+		647951F01906CE1A0034007C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647951EF1906CE1A0034007C /* SpriteKit.framework */; };
+		647951F61906CE1A0034007C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 647951F41906CE1A0034007C /* InfoPlist.strings */; };
+		647951F81906CE1B0034007C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 647951F71906CE1B0034007C /* main.m */; };
+		647951FC1906CE1B0034007C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 647951FB1906CE1B0034007C /* AppDelegate.m */; };
+		647951FF1906CE1B0034007C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647951FD1906CE1B0034007C /* Main.storyboard */; };
+		647952021906CE1B0034007C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647952011906CE1B0034007C /* ViewController.m */; };
+		647952051906CE1B0034007C /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 647952041906CE1B0034007C /* MyScene.m */; };
+		647952071906CE1B0034007C /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 647952061906CE1B0034007C /* Spaceship.png */; };
+		647952091906CE1B0034007C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647952081906CE1B0034007C /* Images.xcassets */; };
+		647952101906CE1B0034007C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6479520F1906CE1B0034007C /* XCTest.framework */; };
+		647952111906CE1B0034007C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647951E91906CE1A0034007C /* Foundation.framework */; };
+		647952121906CE1B0034007C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647951ED1906CE1A0034007C /* UIKit.framework */; };
+		6479521A1906CE1B0034007C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 647952181906CE1B0034007C /* InfoPlist.strings */; };
+		6479521C1906CE1B0034007C /* SKSpikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6479521B1906CE1B0034007C /* SKSpikeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		647952131906CE1B0034007C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 647951DE1906CE1A0034007C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 647951E51906CE1A0034007C;
+			remoteInfo = SKSpike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		647951E61906CE1A0034007C /* SKSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		647951E91906CE1A0034007C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		647951EB1906CE1A0034007C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		647951ED1906CE1A0034007C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		647951EF1906CE1A0034007C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		647951F31906CE1A0034007C /* SKSpike-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SKSpike-Info.plist"; sourceTree = "<group>"; };
+		647951F51906CE1A0034007C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		647951F71906CE1B0034007C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		647951F91906CE1B0034007C /* SKSpike-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKSpike-Prefix.pch"; sourceTree = "<group>"; };
+		647951FA1906CE1B0034007C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		647951FB1906CE1B0034007C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		647951FE1906CE1B0034007C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		647952001906CE1B0034007C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		647952011906CE1B0034007C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		647952031906CE1B0034007C /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		647952041906CE1B0034007C /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		647952061906CE1B0034007C /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		647952081906CE1B0034007C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6479520E1906CE1B0034007C /* SKSpikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKSpikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6479520F1906CE1B0034007C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		647952171906CE1B0034007C /* SKSpikeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SKSpikeTests-Info.plist"; sourceTree = "<group>"; };
+		647952191906CE1B0034007C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6479521B1906CE1B0034007C /* SKSpikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSpikeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		647951E31906CE1A0034007C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647951EC1906CE1A0034007C /* CoreGraphics.framework in Frameworks */,
+				647951EE1906CE1A0034007C /* UIKit.framework in Frameworks */,
+				647951F01906CE1A0034007C /* SpriteKit.framework in Frameworks */,
+				647951EA1906CE1A0034007C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6479520B1906CE1B0034007C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647952101906CE1B0034007C /* XCTest.framework in Frameworks */,
+				647952121906CE1B0034007C /* UIKit.framework in Frameworks */,
+				647952111906CE1B0034007C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		647951DD1906CE1A0034007C = {
+			isa = PBXGroup;
+			children = (
+				647951F11906CE1A0034007C /* SKSpike */,
+				647952151906CE1B0034007C /* SKSpikeTests */,
+				647951E81906CE1A0034007C /* Frameworks */,
+				647951E71906CE1A0034007C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		647951E71906CE1A0034007C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				647951E61906CE1A0034007C /* SKSpike.app */,
+				6479520E1906CE1B0034007C /* SKSpikeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		647951E81906CE1A0034007C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				647951E91906CE1A0034007C /* Foundation.framework */,
+				647951EB1906CE1A0034007C /* CoreGraphics.framework */,
+				647951ED1906CE1A0034007C /* UIKit.framework */,
+				647951EF1906CE1A0034007C /* SpriteKit.framework */,
+				6479520F1906CE1B0034007C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		647951F11906CE1A0034007C /* SKSpike */ = {
+			isa = PBXGroup;
+			children = (
+				647951FA1906CE1B0034007C /* AppDelegate.h */,
+				647951FB1906CE1B0034007C /* AppDelegate.m */,
+				647951FD1906CE1B0034007C /* Main.storyboard */,
+				647952001906CE1B0034007C /* ViewController.h */,
+				647952011906CE1B0034007C /* ViewController.m */,
+				647952031906CE1B0034007C /* MyScene.h */,
+				647952041906CE1B0034007C /* MyScene.m */,
+				647952061906CE1B0034007C /* Spaceship.png */,
+				647952081906CE1B0034007C /* Images.xcassets */,
+				647951F21906CE1A0034007C /* Supporting Files */,
+			);
+			path = SKSpike;
+			sourceTree = "<group>";
+		};
+		647951F21906CE1A0034007C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				647951F31906CE1A0034007C /* SKSpike-Info.plist */,
+				647951F41906CE1A0034007C /* InfoPlist.strings */,
+				647951F71906CE1B0034007C /* main.m */,
+				647951F91906CE1B0034007C /* SKSpike-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		647952151906CE1B0034007C /* SKSpikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6479521B1906CE1B0034007C /* SKSpikeTests.m */,
+				647952161906CE1B0034007C /* Supporting Files */,
+			);
+			path = SKSpikeTests;
+			sourceTree = "<group>";
+		};
+		647952161906CE1B0034007C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				647952171906CE1B0034007C /* SKSpikeTests-Info.plist */,
+				647952181906CE1B0034007C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		647951E51906CE1A0034007C /* SKSpike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6479521F1906CE1B0034007C /* Build configuration list for PBXNativeTarget "SKSpike" */;
+			buildPhases = (
+				647951E21906CE1A0034007C /* Sources */,
+				647951E31906CE1A0034007C /* Frameworks */,
+				647951E41906CE1A0034007C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKSpike;
+			productName = SKSpike;
+			productReference = 647951E61906CE1A0034007C /* SKSpike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6479520D1906CE1B0034007C /* SKSpikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 647952221906CE1B0034007C /* Build configuration list for PBXNativeTarget "SKSpikeTests" */;
+			buildPhases = (
+				6479520A1906CE1B0034007C /* Sources */,
+				6479520B1906CE1B0034007C /* Frameworks */,
+				6479520C1906CE1B0034007C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				647952141906CE1B0034007C /* PBXTargetDependency */,
+			);
+			name = SKSpikeTests;
+			productName = SKSpikeTests;
+			productReference = 6479520E1906CE1B0034007C /* SKSpikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		647951DE1906CE1A0034007C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = u16suzu;
+				TargetAttributes = {
+					6479520D1906CE1B0034007C = {
+						TestTargetID = 647951E51906CE1A0034007C;
+					};
+				};
+			};
+			buildConfigurationList = 647951E11906CE1A0034007C /* Build configuration list for PBXProject "SKSpike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 647951DD1906CE1A0034007C;
+			productRefGroup = 647951E71906CE1A0034007C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				647951E51906CE1A0034007C /* SKSpike */,
+				6479520D1906CE1B0034007C /* SKSpikeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		647951E41906CE1A0034007C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647951F61906CE1A0034007C /* InfoPlist.strings in Resources */,
+				647952091906CE1B0034007C /* Images.xcassets in Resources */,
+				647952071906CE1B0034007C /* Spaceship.png in Resources */,
+				647951FF1906CE1B0034007C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6479520C1906CE1B0034007C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6479521A1906CE1B0034007C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		647951E21906CE1A0034007C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647952051906CE1B0034007C /* MyScene.m in Sources */,
+				647952021906CE1B0034007C /* ViewController.m in Sources */,
+				647951FC1906CE1B0034007C /* AppDelegate.m in Sources */,
+				647951F81906CE1B0034007C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6479520A1906CE1B0034007C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6479521C1906CE1B0034007C /* SKSpikeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		647952141906CE1B0034007C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 647951E51906CE1A0034007C /* SKSpike */;
+			targetProxy = 647952131906CE1B0034007C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		647951F41906CE1A0034007C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				647951F51906CE1A0034007C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		647951FD1906CE1B0034007C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				647951FE1906CE1B0034007C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		647952181906CE1B0034007C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				647952191906CE1B0034007C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6479521D1906CE1B0034007C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6479521E1906CE1B0034007C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		647952201906CE1B0034007C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKSpike/SKSpike-Prefix.pch";
+				INFOPLIST_FILE = "SKSpike/SKSpike-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		647952211906CE1B0034007C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKSpike/SKSpike-Prefix.pch";
+				INFOPLIST_FILE = "SKSpike/SKSpike-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		647952231906CE1B0034007C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SKSpike.app/SKSpike";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKSpike/SKSpike-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SKSpikeTests/SKSpikeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		647952241906CE1B0034007C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SKSpike.app/SKSpike";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKSpike/SKSpike-Prefix.pch";
+				INFOPLIST_FILE = "SKSpikeTests/SKSpikeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		647951E11906CE1A0034007C /* Build configuration list for PBXProject "SKSpike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6479521D1906CE1B0034007C /* Debug */,
+				6479521E1906CE1B0034007C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6479521F1906CE1B0034007C /* Build configuration list for PBXNativeTarget "SKSpike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647952201906CE1B0034007C /* Debug */,
+				647952211906CE1B0034007C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		647952221906CE1B0034007C /* Build configuration list for PBXNativeTarget "SKSpikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647952231906CE1B0034007C /* Debug */,
+				647952241906CE1B0034007C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 647951DE1906CE1A0034007C /* Project object */;
+}
