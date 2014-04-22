@@ -26,11 +26,21 @@
     
     // Present the scene.
     [skView presentScene:scene];
+    
+    UIButton*btn =[UIButton buttonWithType:UIButtonTypeInfoLight];
+    btn.center = self.view.center;
+    [btn addTarget:self action:@selector(hoge) forControlEvents:UIControlEventTouchUpInside];
+    [btn setTitle:@"btn" forState:UIControlStateNormal];
+    [skView addSubview:btn];
+}
+
+- (void)hoge{
+    NSLog(@"hoge");
 }
 
 - (BOOL)shouldAutorotate
 {
-    return YES;
+    return NO;
 }
 
 - (NSUInteger)supportedInterfaceOrientations
